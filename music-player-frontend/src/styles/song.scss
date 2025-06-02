@@ -1,0 +1,47 @@
+/* FileName: song.scss */
+
+.song-container {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+        //
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h2,
+    h3 {
+        color: #F6ADAD;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .song-container {
+        img {
+            width: 60%;
+        }
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.rotateSong {
+    animation: rotate 20s linear forwards infinite;
+}

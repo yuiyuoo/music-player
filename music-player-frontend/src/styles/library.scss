@@ -1,0 +1,93 @@
+/* FileName: library.scss */
+
+.library {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20rem;
+    height: 100%;
+    background: #864c3a;
+    box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.205);
+    overflow: scroll;
+    transform: translateX(-100%);
+    transition: all 0.2s ease;
+    opacity: 0;
+
+    h2 {
+        padding: 2rem;
+    }
+}
+
+.library-song {
+    width: 100%;
+    background: #FFC0C0;
+    border: #ffffff 10px solid;
+    border-radius: 2rem;
+    align-items: left;
+    padding: 1rem 7rem 1rem 1rem;
+
+    &:hover {
+        background: rgb(247, 197, 162);
+    }
+
+
+}
+
+.song-description {
+    h3 {
+        color: #ffffff;
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    h4 {
+        color: #ffffff;
+        font-size: 0.7rem;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(7, 0, 0);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(221, 221, 221);
+}
+
+.selected {
+    background: #f38f8f;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+
+    h3 {
+        color: #052000;
+    }
+}
+
+.active {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .library {
+        width: 100%;
+    }
+}
+
+@keyframes example {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 100px;
+        background-color: #ff6600;
+    }
+}

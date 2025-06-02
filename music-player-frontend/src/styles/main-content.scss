@@ -1,0 +1,118 @@
+.main-content {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    //align-items: flex-start;
+    flex-direction: row;
+    align-items: stretch;
+    height: 100vh;
+    max-height: 800px;
+    .left-panel {
+
+        flex: 2; // Takes more space
+        background: white;
+        border-radius: 2rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 0 0 700px;
+        flex-direction: column;
+        
+        /* do not grow or shrink */
+
+
+        .song-container {
+                        margin-top: 3rem;
+
+            align-items: center;
+            min-height: 60vh;
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-size: 30px;
+            }
+
+            h3 {
+                font-size: 1rem;
+                font-weight: 500;
+                margin-bottom: 2rem;
+
+            }
+
+        }
+
+        .song-cover-wrapper {
+            width: 400px;
+            height: 400px;
+            display: flex;
+
+            .song-cover {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 0.5rem;
+                    object-fit: cover;
+                }
+            }
+        }
+
+
+      
+    }
+
+    .right-panel {
+
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+        background: white;
+        //padding: 2rem;            
+        flex: 1; // Smaller side
+        border-radius: 2rem;
+        flex: 0 0 350px;
+        /* do not grow or shrink */
+        width: 350px;
+
+        .above {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            p {
+                color: #F6ADAD;
+                font-size: 28px;
+                padding: 1rem;
+                margin-left: 1rem;
+            }
+
+            button {
+                margin-right: 2rem;
+            }
+
+        }
+
+        .under {
+            overflow: scroll;
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            margin-bottom: 20px;
+            scrollbar-color: #ffd9ed #ffffff;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .song-container {
+        img {
+            width: 60%;
+        }
+    }
+}

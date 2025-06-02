@@ -1,0 +1,64 @@
+/* FileName: app.scss */
+
+* {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy", sans-serif;
+
+   
+}
+
+body {
+    
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0; background: linear-gradient(0deg,
+            rgba(255, 218, 237, 1) 0%,
+            #ffd3ee 100%);
+}
+
+@import "./library";
+@import "./player";
+@import "./song";
+@import "./nav";
+@import "./main-content.scss";
+
+h2 {
+    color: #394437;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+h3 {
+    color: #0c0007;
+}
+
+h4 {
+    font-weight: 600;
+}
+
+button {
+    font-weight: 700;
+}
+
+button {
+    background: transparent;
+    border-radius: 8px;
+    margin-left: 10%;
+    cursor: pointer;
+    font-size: 16px;
+    border: 3px solid #fd5a7041;
+    padding: 0.8rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background: #fd5a7041;
+        color: white;
+    }
+
+}

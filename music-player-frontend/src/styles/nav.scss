@@ -1,0 +1,58 @@
+/*FileName: nav.scss */
+
+h1 {
+    color: #FF79C3;
+    font-weight: 700;
+    text-align: center;
+    margin: 5rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h4 {
+    color: rgb(9, 70, 9);
+}
+
+
+nav {
+display:inline;    min-height: 10vh;
+    align-items: center;
+    margin: 20px;
+
+    button {
+        background: transparent;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-left: 20%;
+        border: 3px solid #fd5a7041;
+        padding: 0.8rem;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #fd5a7041;
+            color: white;
+        }
+    }
+
+    .app-name {
+        font-size: 50px;
+        font-weight: bold;
+        margin: 0;
+
+    }
+
+    .app-slogan {
+        font-size: 20px;
+        color: #be478d;
+        font-weight: lighter;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        button {
+            z-index: 10;
+        }
+    }
+}
